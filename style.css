@@ -1,12 +1,40 @@
+.footer-ultra-minimal{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
 body{
-    background-color: rgb(255, 255, 255);
-    font-family: 'Times New Roman', Times, serif;
+    background-image: url(img/f1.jpg);
+    background-size: cover; /* Cubrir fondo entero */
+    background-repeat: no-repeat; /* No repetir IMG */
+    background-position: center center; /* Centra la IMG */
+    background-attachment: fixed; /* Fija IMG */
 }
 
-.navbar{
-    background-color: rgb(172, 171, 171);
-}
+.navbar .navbar-brand,
+  .navbar .nav-link,
+  .navbar .offcanvas-title .navbar .nav-link:hover,
+  .navbar .nav-link.active{
+    color: white !important;
+  }
 
-.offcanvas-body{
-    background-color: white;
-}
+  .navbar .form-control {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+  }
+
+.carousel-item {
+    display: flex;
+    height: 700px; 
+    background-color:transparent; 
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain; 
+  }
